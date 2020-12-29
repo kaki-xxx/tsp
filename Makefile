@@ -11,6 +11,9 @@ test_brute_force: brute_force
 test_dp: dp
 	for i in `seq 10`; do ./test.sh dp 17 $$i; done
 
+test_mst: mst
+	for i in `seq 10`; do ./test.sh mst 17 $$i; done
+
 clean:
 	$(RM) brute_force dp
 

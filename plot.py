@@ -6,10 +6,10 @@ from subprocess import PIPE
 
 import matplotlib.pyplot as plt
 
-target_dir = "./graph/17-cities"
+target_dir = "./graph/100-cities"
 
 for i in range(1, 11):
-    proc = subprocess.run(["./test.sh", f"{i}"], stdout=PIPE)
+    proc = subprocess.run(["./test.sh", "mst", f"100", f"{i}"], stdout=PIPE)
     output = proc.stdout.decode().splitlines()
     n = int(output[0])
     output = output[1:]

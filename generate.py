@@ -6,7 +6,7 @@ import random
 MAX_X = 1000
 MAX_Y = 1000
 
-n = 17
+n = 100
 
 print(n)
 
